@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import Hero from '../components/Hero'
 import ActionButton from '../components/ActionButton'
 import ProductCard from '../components/ProductCard'
@@ -6,9 +6,12 @@ import Category from '../components/Category'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 
+import Video from '../components/Video'
+
 
 
 const Home = () => {
+
     gsap.registerPlugin(useGSAP);
 
     useGSAP(() => {
@@ -17,6 +20,7 @@ const Home = () => {
             opacity: 1,
             duration: 1
         });
+
     }, [])
 
     return (
@@ -24,6 +28,7 @@ const Home = () => {
             <Hero />
 
             <Category />
+
 
 
             <section className='py-24 px-28 bg-zinc-950'>
@@ -34,6 +39,10 @@ const Home = () => {
                     <ProductCard />
                     <ProductCard />
                 </div>
+            </section>
+
+            <section className='flex px-20 py-24 justify-center items-center bg-amber-950'>
+                <Video />
             </section>
 
 
