@@ -18,3 +18,29 @@ body {
 .secondary-btn {
     @apply px-6 py-3 rounded-lg bg-gradient-to-r from-orange-500 to-red-600 text-white font-semibold hover:scale-105 transition duration-300
 }
+
+.collectionItem {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    padding: 30px 130px 30px 30px;
+    transition: .5s;
+}
+
+.collectionItem:hover {
+    transform: scale(1.05);
+}
+
+.collectionItem h4 {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.collectionItem p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+}

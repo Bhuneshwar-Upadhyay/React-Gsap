@@ -7,12 +7,12 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 
 import Video from '../components/Video'
+import Collections from '../components/Collections'
+import MarqueeComponent from '../components/Marquee'
 
 
 
 const Home = () => {
-
-    gsap.registerPlugin(useGSAP);
 
     useGSAP(() => {
         gsap.from('.title', {
@@ -26,6 +26,10 @@ const Home = () => {
     return (
         <>
             <Hero />
+
+            <Collections />
+
+            <MarqueeComponent />
 
             <Category />
 
