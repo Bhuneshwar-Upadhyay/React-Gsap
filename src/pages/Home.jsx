@@ -9,6 +9,7 @@ import { useGSAP } from '@gsap/react';
 import Video from '../components/Video'
 import Collections from '../components/Collections'
 import MarqueeComponent from '../components/Marquee'
+import Parallax from '../components/Parallax'
 
 
 
@@ -30,6 +31,10 @@ const Home = () => {
             <Collections />
 
             <MarqueeComponent />
+
+
+            <Parallax />
+
 
             <Category />
 
